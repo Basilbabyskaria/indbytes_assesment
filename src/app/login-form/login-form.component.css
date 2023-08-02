@@ -1,0 +1,62 @@
+.row {
+  display: flex;
+}
+.col1 {
+  /* background-color: red; */
+  height: 100vh;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.col2 {
+  /* background-color: green; */
+  height: 100vh;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 750px) {
+  .row {
+    flex-direction: column;
+    padding: 0;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .col2 {
+    height: 0;
+    padding: 0;
+    visibility: collapse;
+  }
+}
+.col1 .form {
+  background-color: blue;
+  min-height: 90vh;
+  min-width: 80%;
+  padding: 2em 1em 2em 1em; /* top | right | bottom | left */
+}
+.col1 .form *:not(:first-child) {
+  margin-top: 2em;
+}
+.col1 .form p {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.col1 .form .input {
+  height: 40px;
+  min-width: 100%;
+  padding: 15px;
+  border: 1.5px solid black;
+  font-weight: 500;
+}
+.col1 .form button {
+  height: 40px;
+  min-width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 0;
+}
