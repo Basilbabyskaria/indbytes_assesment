@@ -30,33 +30,62 @@
     padding: 0;
     visibility: collapse;
   }
+  
 }
-.col1 .form {
-  background-color: blue;
+.col1 form {
+  /* background-color: blue; */
   min-height: 90vh;
   min-width: 80%;
-  padding: 2em 1em 2em 1em; /* top | right | bottom | left */
+  padding: 2em 1em 2em 1em;
 }
-.col1 .form *:not(:first-child) {
+.col1 form *:not(:first-child) {
   margin-top: 2em;
 }
-.col1 .form p {
-  margin-bottom: 0.5em;
+.col1 form p {
+  /* margin-bottom: 0.5em; */
   font-weight: 500;
 }
 
-.col1 .form .input {
+.col1 form .input {
   height: 40px;
   min-width: 100%;
   padding: 15px;
   border: 1.5px solid black;
   font-weight: 500;
 }
-.col1 .form button {
+.col1 form .button {
   height: 40px;
   min-width: 100%;
   text-align: center;
   color: white;
   background-color: black;
   border: 0;
+}
+.col1 form .checkbox {
+  font-size: 110%;
+  display: inline;
+}
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 2px;
+  background-color: rgba(153, 150, 150, 0.763);
+  margin: 5px;
+}
+.alternat_login {
+  display: table;
+}
+.alternat_login button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-color: black;
 }

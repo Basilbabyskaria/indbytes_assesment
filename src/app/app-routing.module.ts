@@ -5,11 +5,18 @@ import { LoginFormComponent } from './login-form/login-form.component';
 
 const routes: Routes = [
   {
-    path:'',component:HomeComponent
-},
-{
-  path:'login',component:LoginFormComponent
-}
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
+    path: 'login',
+    component: LoginFormComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
